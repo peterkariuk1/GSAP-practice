@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  height: 15vh;
+  background-color: red;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.center-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  padding: 12px 28px;
+}
+.sidebar {
+  background-color: green;
+  width: 15vw;
+}
+footer {
+  height: 15vh;
+  background-color: blue;
+}

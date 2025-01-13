@@ -35,7 +35,8 @@ button {
   background-color: green;
   width: 15vw;
 }
-footer {
+.footer {
   height: 15vh;
   background-color: blue;
+  transform: translateY(100px);
 }

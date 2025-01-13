@@ -4,66 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GSAP</title>
-    <link rel="stylesheet" href="./styles.css">
-    <style>
-      body {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        font-family: sans-serif;
-      }
-      header {
-        display: flex;
-        height: 15vh;
-        background-color: red;
-      }
-      .links {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-        font-size: 40px;
-        width: 100%;
-      }
-      .content {
-        display: flex;
-        flex-grow: 1;
-        justify-content: space-between;
-      }
-      .center-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      button{
-        padding: 12px 28px;
-      }
-      .sidebar {
-        background-color: green;
-        width: 15vw;
-      }
-      footer {
-        height: 15vh;
-        background-color: blue;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="links">
-        <div class="link-1">Link 1</div>
-        <div class="link-2">Link 2</div>
-        <div class="link-3">Link 3</div>
+        <div class="link">Link 1</div>
+        <div class="link">Link 2</div>
+        <div class="link">Link 3</div>
       </div>
     </header>
     <div class="content">
       <div class="sidebar left"></div>
       <div class="center-content">
-        <button>Reverse</button>
+        <button class="reverse-button">Reverse</button>
       </div>
       <div class="sidebar right"></div>
     </div>
-    <footer></footer>
+    <footer class="footer"></footer>
   </body>
 </html>

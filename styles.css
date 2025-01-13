@@ -38,4 +38,5 @@ button {
 .footer {
   height: 15vh;
   background-color: blue;
+  transform: translateY(100px);
 }

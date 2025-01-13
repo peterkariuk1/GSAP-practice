@@ -8,7 +8,13 @@ const timeline = gsap.timeline({ defaults: { duration: 1.5 } });
 timeline
     .from('.header', { y: '-100%', ease: 'bounce' })
     .from('.link', { opacity: 0, stagger: .3 })
-    .from('.right', { x: '-100vw', ease: 'power2.in' },1)
-    .from('.left', { x: '-100%' },1.4)
-    .from('.footer', { y: 0, ease: 'elastic' });
+    .from('.right', { x: '-100vw', ease: 'power2.in' }, 1)
+    .from('.left', { x: '-100%' }, 1.4)
+    .to('.footer', { y: 0, ease: 'back.inOut(2.7)' }, 3);
 
+const reverseButtonElement = document.querySelector('.reverse-button');
+
+reverseButtonElement.addEventListener('click', () => {
+    timeline.timeScale(3);
+    timeline.reverse();
+});
